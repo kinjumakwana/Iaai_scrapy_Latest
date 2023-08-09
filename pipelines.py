@@ -63,6 +63,7 @@ class StoreDataToMySQL:
     #                 Key_ VARCHAR(255),
     #                 Odometer VARCHAR(255),
     #                 Airbags VARCHAR(255),
+    #                 Vehicle_Wheels VARCHAR(255),
     #                 Price VARCHAR(255),
     #                 Vehicle VARCHAR(255),
     #                 Body_Style VARCHAR(255),
@@ -89,7 +90,7 @@ class StoreDataToMySQL:
 
     # def store_db(self, item):
     #         command = (f"INSERT INTO {self.table_name} "
-    #                 f"VALUES (%s, %s, %s,%s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s )")
+    #                 f"VALUES (%s, %s, %s,%s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s )")
     #         data = (
     #             item['Listing_Url'],
     #             item['Detail_Url'],
@@ -103,6 +104,7 @@ class StoreDataToMySQL:
     #             item['Key'],
     #             item['Odometer'],
     #             item['Airbags'],
+    #             item['Vehicle Wheels'],
                 
     #             item['Price'],
     #             # item['Vehicle_Description'],

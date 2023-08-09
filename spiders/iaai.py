@@ -175,6 +175,8 @@ class IaaiSpider(scrapy.Spider):
             response.xpath('.//span[text()="Odometer:"]/following-sibling::*//text()').get(''))).strip()
         item['Airbags'] = re.sub('\s+', '', ''.join(
             response.xpath('.//span[text()="Airbags:"]/following-sibling::*//text()').get(''))).strip()
+        item['Vehicle Wheels'] = re.sub('\s+', '', ''.join(
+            response.xpath('.//span[text()="Vehicle Wheels:"]/following-sibling::*//text()').get(''))).strip()
         
         # item['Vehicle_Information'] = '\n'.join(
         #     [re.sub('\s+', ' ', ' '.join(data.xpath('./span/text()').getall())).strip() for data in response.xpath(
